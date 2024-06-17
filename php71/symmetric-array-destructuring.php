@@ -36,6 +36,6 @@ foreach ($books as $book) {
 }
 
 # Symmetric Array Destructuring 3
-foreach ($books as [$title, $author]) {
-    var_dump($title, $author);
-}
+// foreach ($books as [$title, $author]) {
+//     var_dump($title, $author);
+// }

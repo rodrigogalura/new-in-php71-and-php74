@@ -6,7 +6,8 @@ class ServerErrorException extends Exception {}
 class Page {
     public function home()
     {
-        throw new NotFoundException('not found', 404);
+        var_dump('home page');
+        // throw new NotFoundException('not found', 404);
         // throw new ServerErrorException('server error', 500);
     }
 }
@@ -15,11 +16,11 @@ function flash($message) { var_dump($message); }
 
 try {
     (new Page)->home();
-} catch (NotFoundException) {
+} catch (NotFoundException $e) {
     flash($e->getCode());
-} catch (ServerErrorException) {
+} catch (ServerErrorException $e) {
     flash($e->getCode());
-} catch (Exception) {
+} catch (Exception $e) {
     flash($e->getCode());
 }
 

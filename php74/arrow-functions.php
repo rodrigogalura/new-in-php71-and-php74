@@ -23,7 +23,7 @@ $movies = collect([
 
 # Arrow function 1
 // $movies = $movies->map(fn ($movie) => ucfirst($movie->title));
-var_dump($movies);
+// var_dump($movies);
 
 
 

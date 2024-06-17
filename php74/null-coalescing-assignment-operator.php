@@ -7,10 +7,10 @@ $user = [
     ]
 ];
 
-// $user['name']['fname'] = isset($user['name']['fname']) ? $user['name']['fname'] : 'Foo';
+$user['name']['fname'] = isset($user['name']['fname']) ? $user['name']['fname'] : 'Foo';
 
 # Coalescing Operator (php7.0+)
-$user['name']['fname'] = $user['name']['fname'] ?? 'Foo';
+// $user['name']['fname'] = $user['name']['fname'] ?? 'Foo';
 
 # Coalescing Assignment Operator
 // $user['name']['fname'] ??= 'Foo';
